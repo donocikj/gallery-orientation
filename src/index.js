@@ -6,6 +6,9 @@
 //grab the preloaded image elements
 let preloadedImgElementList = document.querySelectorAll(`.preload-images img`);
 let galleryList = new Array();
+
+let thumbnailList = new Array();
+
 //loop through them
 for( let i = 0; i < preloadedImgElementList.length; i++ ) {
 
@@ -29,14 +32,20 @@ for( let i = 0; i < preloadedImgElementList.length; i++ ) {
 //initialize the gallery object
 const gallery = new Gallery(galleryList);
 
-gallery.populateThumbnails(addThumbnail);
 
 //NOW init the gallery
+gallery.populateThumbnails(addThumbnail, thumbnailList);
+
+//maybe I could have a variable to store the thumbnails by indices
+
 
 gallery.initGallery();
 // console.log(gallery);
 // console.log()
+
 //give gallery object means of assigning images to elements and highlight thumbnails
+//actually it seems it can just grab functions from here... maybe should adjust this to despaghetify?
+
 
 
 //load thumbnails. expects a thumbnail image element and index value it would be referenced with.

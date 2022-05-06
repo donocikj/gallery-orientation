@@ -24,7 +24,7 @@ class Gallery {
     //update the choice of picture to show
     selectExhibit(index) {
 
-        console.log(index);
+        // console.log(index);
         //check bounds?
 
         this._chosenIndex = index;
@@ -41,12 +41,12 @@ class Gallery {
 
     //select previous image
     selectPrevious() {
-        console.log(`selecting previous`);
-        console.log(this);
+        // console.log(`selecting previous`);
+        // console.log(this);
         if (!this._exhibitList) {
             return;
         }
-        console.log(`we've gotten this far`)
+        // console.log(`we've gotten this far`)
         if (this._chosenIndex === 0) {
             this.selectExhibit(this._exhibitList.length - 1);
         } else {
@@ -56,8 +56,8 @@ class Gallery {
 
     //select next image
     selectNext() {
-        console.log(`selecting next`);
-        console.log(this);
+        // console.log(`selecting next`);
+        // console.log(this);
         if (!this._exhibitList) {
             return;
         }
@@ -71,11 +71,12 @@ class Gallery {
 
 
     //populate thumbnail pool with given function
-    populateThumbnails(addThumb) {
+    populateThumbnails(addThumb, thumbnailReference) {
         // console.log(this._exhibitList);
         this._exhibitList.forEach((picture, key) => {
             // console.log(key);
             addThumb(picture.thumbnailElement, key);
+            thumbnailReference[key] = picture.thumbnailElement;
         });
     }
 
