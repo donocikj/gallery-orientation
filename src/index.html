@@ -5,27 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
+    <script defer src="./galleryPicture.js"></script>
+    <script defer src="./gallery.js"></script>
     <script defer src="./index.js"></script>
     <title>Gallery</title>
 </head>
 <body>
     <div class="preload-images">
-        <img id="butterfly" src="./assets/img/butterfly.png">
-        <img id="meadow" src="./assets/img/meadow.jpg">
-        <img id="norway" src="./assets/img/norway.jpg">
-        <img id="owl" src="./assets/img/owl.jpg">
-        <img id="peace" src="./assets/img/peace.jpg">
-        <img id="plains" src="./assets/img/plains.jpg">
-        <img id="rainbow" src="./assets/img/rainbow.jpg">
-        <img id="tit" src="./assets/img/tit.jpg">
+        <img id="butterfly" src="./assets/img/butterfly.png"
+            data-title="Butterfly"
+            data-description="blue butterfly on yellow background">
+        <img id="meadow" src="./assets/img/meadow.jpg"
+            data-title="Meadow"
+            data-description="Blossoming meadow in the woods">
+        <img id="norway" src="./assets/img/norway.jpg"      
+            data-title="Norway"
+            data-description="Body of water cradled by wooded hills">
+        <img id="owl" src="./assets/img/owl.jpg"
+            data-title="Owl"
+            data-description="Close up photograph of an owl's head">
+        <img id="peace" src="./assets/img/peace.jpg"
+            data-title="Peace"
+            data-description="Peace symbol arranged out of yellow blossoms on a blue background">
+        <img id="plains" src="./assets/img/plains.jpg"
+            data-title="Plains"
+            data-description="lone tree standing amidst the plains lit by setting sun">
+        <img id="rainbow" src="./assets/img/rainbow.jpg"
+            data-title="Rainbow"
+            data-description="Rainbow over the sea, among rays of sunlight penetrating the cloud cover">
+        <img id="tit" src="./assets/img/tit.jpg"
+            data-title="Tit"
+            data-description="Tit holding onto a conifer.">
     </div>
 
     <main>
         <button class="left navButton">
             <img src="./assets/img/arrow.svg" alt="arrow left">
         </button>
-        <figure>
-            <img id="exhibit" src="./assets/img/meadow.jpg" alt="meadow">
+        <figure id="exhibit">
+            <img src="./assets/img/meadow.jpg" alt="meadow">
             <figcaption>
                 <h2 id="imgTitle">test</h2>
                 <p id="imgDescription">lorem ipsum and whateverosaurus</p>
@@ -37,7 +55,7 @@
 
     </main>
     <nav id="thumbnailStrip">
-        <img src="./assets/img/meadow.jpg" alt="meadow">
+        <!-- <img src="./assets/img/meadow.jpg" alt="meadow"> -->
 
     </nav>
 </body>

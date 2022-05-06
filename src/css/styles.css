@@ -60,14 +60,17 @@ main figure figcaption {
     height:100%;
 }
 
+#thumbnailStrip img.chosen{
+    border: thick navy solid;
+}
+
 #thumbnailStrip {
     width: 80%;
     min-height: 5%;
     height: 77px;
 
-    background-color: blue;
-
     margin: 1% auto 4%;
 
     display: flex;
+    justify-content: space-between;
 }
