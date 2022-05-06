@@ -4,11 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script defer src="./index.js"></script>
     <title>Gallery</title>
 </head>
 <body>
-    
+    <div class="preload-images">
+        <img id="butterfly" src="./assets/img/butterfly.png">
+        <img id="meadow" src="./assets/img/meadow.jpg">
+        <img id="norway" src="./assets/img/norway.jpg">
+        <img id="owl" src="./assets/img/owl.jpg">
+        <img id="peace" src="./assets/img/peace.jpg">
+        <img id="plains" src="./assets/img/plains.jpg">
+        <img id="rainbow" src="./assets/img/rainbow.jpg">
+        <img id="tit" src="./assets/img/tit.jpg">
+    </div>
+
+    <main>
+        <button class="left navButton">
+            <img src="./assets/img/arrow.svg" alt="arrow left">
+        </button>
+        <figure>
+            <img id="exhibit" src="./assets/img/meadow.jpg" alt="meadow">
+            <figcaption>
+                <h2 id="imgTitle">test</h2>
+                <p id="imgDescription">lorem ipsum and whateverosaurus</p>
+            </figcaption>
+        </figure>
+        <button class="right navButton">
+            <img src="./assets/img/arrow.svg" alt="arrow right">
+        </button>
+
+    </main>
+    <nav id="thumbnailStrip">
+        <img src="./assets/img/meadow.jpg" alt="meadow">
+
+    </nav>
 </body>
 </html>
