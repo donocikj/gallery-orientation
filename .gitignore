@@ -1,0 +1,23 @@
+# General
+*.log
+*.bak
+*.tmp
+logs
+coverage
+
+# Javascript / Typescript
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+node_modules
+
+# Visual Studio Code
+.vscode/*
+#!.vscode/settings.json
+#!.vscode/tasks.json
+#!.vscode/launch.json
+#!.vscode/extensions.json
+#!.vscode/*.code-snippets
+*.code-workspace
